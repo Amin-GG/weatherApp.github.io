@@ -1,0 +1,6 @@
+*.json
+input.css
+tailwind.config.js
+node_modules
+README.md
+# .gitignore
