@@ -18,10 +18,10 @@ form.addEventListener("submit", (e) => {
       const markup = `
         <li
         class="bg-white px-3 py-6 rounded-sm shadow-lg hover:-translate-y-1 transition-all duration-300 hover:cursor-default">
-        <h2 class="text-3xl font-[vazirTH] relative">
+        <h2 class="text-3xl font-[vazirTH] relative mt-8">
         ${name}
         <span
-        class="absolute -top-4 ml-2 text-lg right-0 bg-green-400 text-white shadow-md w-10 h-10 flex justify-center items-center rounded-[50%]"
+        class="absolute -top-0 ml-2 text-lg right-0 bg-green-400 text-white shadow-md w-10 h-10 flex justify-center items-center rounded-[50%]"
         >${sys.country}</span>
         </h2>
         <p class="text-7xl mt-8 text-green-400 font-[vazirB]">${Math.round(
