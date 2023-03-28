@@ -827,19 +827,19 @@ video {
 @font-face {
   font-family: "vazir";
 
-  src: url(./fonts/Vazir.woff);
+  src: url(./Vazir.woff);
 }
 
 @font-face {
   font-family: "vazirB";
 
-  src: url(./fonts/Vazir-Bold.woff2);
+  src: url(./Vazir-Bold.woff2);
 }
 
 @font-face {
   font-family: "vazirTH";
 
-  src: url(./fonts/Vazir-Thin.woff2);
+  src: url(./Vazir-Thin.woff2);
 }
 
 * {
