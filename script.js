@@ -12,10 +12,10 @@ form.addEventListener("submit", (e) => {
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-        const { main, name, sys, weather } = data;
-        const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`;
-        const li = document.createElement("li");
-        const markup = `
+      const { main, name, sys, weather } = data;
+      const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`;
+      const li = document.createElement("li");
+      const markup = `
         <li
         class="bg-white px-3 py-6 rounded-sm shadow-lg hover:-translate-y-1 transition-all duration-300 hover:cursor-default">
         <h2 class="text-3xl font-[vazirTH] relative">
@@ -25,8 +25,8 @@ form.addEventListener("submit", (e) => {
         >${sys.country}</span>
         </h2>
         <p class="text-7xl mt-8 text-green-400 font-[vazirB]">${Math.round(
-            main.temp
-            )}<sup>c</sup></p>
+          main.temp
+        )}<sup>c</sup></p>
             <figure>
             <img src="${icon}" class="mx-auto">
             <figurecaption>${weather[0]["description"]}
@@ -34,13 +34,12 @@ form.addEventListener("submit", (e) => {
             </figure>
             </li>
             `;
-            li.innerHTML = markup;
-            list.appendChild(li);
+      li.innerHTML = markup;
+      list.appendChild(li);
       msg.style.display = "none";
-      console.log(weather[0].icon);
     })
     .catch(() => {
-        msg.style.display = "block";
+      msg.style.display = "block";
     });
   input.value = "";
 });
