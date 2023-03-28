@@ -1,6 +1,0 @@
-*.json
-input.css
-tailwind.config.js
-node_modules
-.gitignore
-style.css
